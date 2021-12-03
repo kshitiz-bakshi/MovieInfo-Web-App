@@ -1,0 +1,115 @@
+$primary-font : "Sofia", sans-serif;
+
+@mixin flex-con {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+body{
+    background-color: rgb(12, 11, 11)
+}
+
+
+.navbar{
+    @include flex-con();
+    border: 0.3rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+    h2{
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        font-family: $primary-font;
+    
+    }  
+}
+.btn-donate{
+    position: absolute;
+    right: 150px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(238, 49, 49);
+    width: 100px;
+    height: 30px; 
+}
+
+
+
+.container{
+
+   .form{
+        @include flex-con();
+        flex-direction: column;
+        justify-content: center;
+        margin: 2.5rem;
+        color: #fff;
+        h1{
+            font-size: 60px;
+        }
+        .search{
+            align-self: stretch;
+            margin: 10px;
+            margin-top:5px ;
+            border-radius: 0.5rem;
+            height: 35px;
+            padding-left: 20px;
+        }
+        .btn{
+            align-self: stretch;
+            margin: 15px 10px;
+            background-color: rgb(219, 113, 26);
+            box-shadow: 0 0 200px white;
+            border-radius: 0.5rem;
+            height: 30px;
+        }
+        .btn:hover{
+            background-color: rgba(241, 140, 8, 0.644);
+            color: #fff;
+        }  
+    }
+}
+.container-result{
+    margin: 0px 80px;
+}
+#main{
+    width: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+    div{
+        @include flex-con();
+        width: 250px;
+        height: 320px;
+        margin: -10px 0px;
+        justify-content: center;
+        margin: 40px 80px;
+        padding: 30px 0px;
+        flex-direction: column;
+    }
+    img{
+        width: 150px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 11px;
+        margin: 10px;
+    }
+    h2{
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+    }
+}
