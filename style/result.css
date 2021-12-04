@@ -1,0 +1,112 @@
+body {
+  background-color: #0c0b0b;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.3rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+.navbar h2 {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Sofia", sans-serif;
+}
+
+.btn-donate {
+  position: absolute;
+  right: 150px;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #ee3131;
+          box-shadow: 0 0 15px #ee3131;
+  width: 100px;
+  height: 30px;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 60px;
+}
+
+#main .containerInfo {
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 30px #fff;
+          box-shadow: 0px 0px 30px #fff;
+  width: 800px;
+  height: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  top: 280px;
+  left: 500px;
+}
+
+#main ul li {
+  font-size: 19px;
+}
+
+#main h1 {
+  margin-left: 80px;
+  font-size: 50px;
+}
+
+#main img {
+  width: 350px;
+  height: 460px;
+  border-radius: 11px;
+  margin: 10px;
+}
+
+#main .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.plot {
+  color: #fff;
+  margin: 0px 75px;
+  font-size: 20px;
+}
+
+.plot button {
+  background-color: #ce7e15;
+  border-color: red;
+  border-radius: 5px;
+  margin-left: 5px;
+  -webkit-box-shadow: 0px 0px 10px red;
+          box-shadow: 0px 0px 10px red;
+}
+
+.plot button:hover {
+  background-color: #da3f3f;
+}
+/*# sourceMappingURL=result.css.map */

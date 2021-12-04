@@ -7,9 +7,8 @@ $primary-font : "Sofia", sans-serif;
 
 
 
-
 body{
-    background-color: rgb(12, 11, 11)
+    background-color: rgb(12, 11, 11);
 }
 
 
@@ -82,7 +81,7 @@ body{
     margin: 0px 80px;
 }
 #main{
-    width: 10px;
+    // width: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -90,11 +89,11 @@ body{
 
     div{
         @include flex-con();
-        width: 250px;
-        height: 320px;
+        width: 100px;
+        height: 200px;
         margin: -10px 0px;
         justify-content: center;
-        margin: 40px 80px;
+        margin: 40px 70px;
         padding: 30px 0px;
         flex-direction: column;
     }
@@ -104,12 +103,5 @@ body{
         object-fit: cover;
         border-radius: 11px;
         margin: 10px;
-    }
-    h2{
-        font-size: 20px;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-align: center;
-        color: #fff;
     }
 }

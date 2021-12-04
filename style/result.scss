@@ -1,0 +1,96 @@
+$primary-font : "Sofia", sans-serif;
+
+@mixin flex-con {
+    display: flex;
+    align-items: center;
+}
+
+
+
+body{
+    background-color: rgb(12, 11, 11);
+}
+
+
+.navbar{
+    @include flex-con();
+    border: 0.3rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+    h2{
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        font-family: $primary-font;
+    
+    }  
+}
+.btn-donate{
+    position: absolute;
+    right: 150px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(238, 49, 49);
+    width: 100px;
+    height: 30px; 
+}
+#main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    // background-color: #bc13fe;
+    margin: 60px;
+
+    .containerInfo{
+        color: #fff;
+        box-shadow: 0px 0px 30px #fff;
+        width:800px ;
+        height: 300px;
+        justify-self: center;
+        align-self: center;
+       position: absolute;
+       top: 280px;
+       left: 500px;
+    }
+    ul{
+        li{
+            font-size: 19px;
+        }
+    }
+    h1{
+        margin-left: 80px;
+        font-size: 50px;
+    }
+    img{
+        width: 350px;
+        height: 460px;
+        border-radius: 11px;
+        margin: 10px;
+    }
+    .image{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.plot{
+    color: #fff;
+    margin: 0px 75px;
+    font-size: 20px;
+    button{
+        background-color: rgb(206, 126, 21);
+        border-color: red;
+        border-radius: 5px;
+        margin-left: 5px;
+        box-shadow: 0px 0px 10px red;
+    }
+    button:hover{
+        background-color: rgb(218, 63, 63);
+    }
+}

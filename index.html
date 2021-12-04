@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
     <title>Film Geek</title>
 </head>
 
@@ -27,68 +28,18 @@
             </form>
         </div>
         <div class="container-result">
-            <a id="main" href="#"></a>
+            <main id="main"></main>
         </div>
     </section>
 
 </body>
 
 </html>
+<script src="./js/main.js"></script>
+
 
 
 
 <script>
-    const key = "e1e16497";
-    const apiurl = "http://www.omdbapi.com/?apikey=" + key;
-    const form = document.getElementById("form");
-    const search = document.getElementById("Movie");
-    const main = document.getElementById("main");
-
-    async function getdata(url) {
-        console.log(url)
-        const response = await fetch(url);
-        const data = await response.json();
-
-        var res = data.Response;
-        
-        console.log(data.Response);
-        if (res == "False") {
-            const div = document.createElement('div')
-            div.style.width = "400px";
-            div.style.height = "30px";
-            div.style.color = "white";
-            div.innerHTML = "NO MOVIE FOUND";
-            
-            document.getElementById("main").appendChild(div);
-
-        }
-        else {
-            // console.log(data.Response);
-            const div = document.createElement('div')
-            const image = document.createElement('img');
-            const text = document.createElement('h2');
-            div.style.width = "100px";
-            div.style.height = "100px";
-            div.style.color = "white";
-            div.innerHTML = data.Title;
-            image.src = data.Poster;
-            div.appendChild(image);
-            div.appendChild(text);
-            document.getElementById("main").appendChild(div);
-        }
-    }
-
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        main.innerHTML = '';
-
-        var searchTerm = search.value;
-        searchTerm = searchTerm.replace(' ', '+');
-
-        if (searchTerm) {
-
-            getdata(apiurl + "&t=" + searchTerm);
-            search.value = "";
-        }
-    });
+    
 </script>

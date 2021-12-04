@@ -90,7 +90,6 @@ body {
 }
 
 #main {
-  width: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,13 +108,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
-  height: 320px;
+  width: 100px;
+  height: 200px;
   margin: -10px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 80px;
+  margin: 40px 70px;
   padding: 30px 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -130,13 +129,5 @@ body {
      object-fit: cover;
   border-radius: 11px;
   margin: 10px;
-}
-
-#main h2 {
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
