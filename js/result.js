@@ -25,6 +25,7 @@ async function getdata(url) {
     text.innerHTML = data.Title;
     console.log(data.Title);
     document.getElementById("main").appendChild(div);
+    
 
 
     const a = document.getElementById('a');
