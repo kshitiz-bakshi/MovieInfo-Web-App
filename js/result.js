@@ -1,5 +1,5 @@
 const key = "e1e16497";
-const apiurl = "http://www.omdbapi.com/?apikey=" + key;
+const apiurl = "https://www.omdbapi.com/?apikey=" + key;
 const title = localStorage.getItem("Title");
 var searchUrl = apiurl + "&t=" + title;
 searchUrl = searchUrl.replace(' ', '+');
