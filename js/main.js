@@ -10,7 +10,7 @@ async function getdata(url) {
     data = await response.json();
 
     var res = data.Response;
-    console.log(data.Response);
+    // console.log(data.Response);
     if (res == "False" && data.Error == "Movie not found!") {
         const div = document.createElement('div')
         div.style.width = "400px";

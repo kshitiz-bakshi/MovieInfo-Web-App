@@ -7,12 +7,12 @@ localStorage.removeItem("Title");
 
 getdata(searchUrl);
 async function getdata(url) {
-    console.log(url)
+    // console.log(url)
     const response = await fetch(url);
     const data = await response.json();
 
     var res = data.Response;
-    console.log(res);
+    // console.log(res);
     const div = document.createElement('div');
     const image = document.createElement('img');
     const text = document.createElement('h1');
@@ -23,7 +23,7 @@ async function getdata(url) {
     div.appendChild(text);
     div.appendChild(image);
     text.innerHTML = data.Title;
-    console.log(data.Title);
+    // console.log(data.Title);
     document.getElementById("main").appendChild(div);
     
 
