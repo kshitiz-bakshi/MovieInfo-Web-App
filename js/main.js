@@ -45,7 +45,7 @@ async function getdata(url) {
             var ref = apiurl + "&t=" + element.Title;
             ref = ref.replace(' ', '+');
             // console.log(element.Title);
-            anc.href = "result.html";
+            anc.href = "./html/result.html";
             i = i + 1;
             image.setAttribute('id', i);
             div.appendChild(anc);
