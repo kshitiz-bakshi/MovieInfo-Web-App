@@ -45,13 +45,14 @@ body{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    // background-color: #bc13fe;
+    flex-wrap: wrap-reverse;
     margin: 60px;
 
     .containerInfo{
         color: #fff;
         box-shadow: 0px 0px 30px #fff;
-        width:800px ;
+        background-color: rgba(20, 20, 20, 0.89);
+        width: 50vw;
         height: 300px;
         justify-self: center;
         align-self: center;
@@ -73,6 +74,7 @@ body{
         height: 460px;
         border-radius: 11px;
         margin: 10px;
+        border: 10px solid #fff ;
     }
     .image{
         display: flex;

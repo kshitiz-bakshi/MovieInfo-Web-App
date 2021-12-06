@@ -46,6 +46,8 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   margin: 60px;
 }
 
@@ -53,7 +55,8 @@ body {
   color: #fff;
   -webkit-box-shadow: 0px 0px 30px #fff;
           box-shadow: 0px 0px 30px #fff;
-  width: 800px;
+  background-color: rgba(20, 20, 20, 0.89);
+  width: 50vw;
   height: 300px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -79,6 +82,7 @@ body {
   height: 460px;
   border-radius: 11px;
   margin: 10px;
+  border: 10px solid #fff;
 }
 
 #main .image {
