@@ -9,9 +9,8 @@ async function getdata(url) {
     const response = await fetch(url);
     data = await response.json();
 
-    var res = data.Response;
-    // console.log(data.Response);
-    if (res == "False" && data.Error == "Movie not found!") {
+    let result  = data.Response;
+    if (result == "False" && data.Error == "Movie not found!") {
         const div = document.createElement('div')
         div.style.width = "400px";
         div.style.height = "30px";
@@ -22,7 +21,7 @@ async function getdata(url) {
         document.getElementById("main").appendChild(div);
 
     }
-    if (res == "False" && data.Error == "Too many results.") {
+    if (result == "False" && data.Error == "Too many results.") {
         const div = document.createElement('div')
         div.style.width = "400px";
         div.style.height = "30px";
@@ -44,7 +43,6 @@ async function getdata(url) {
             image.src = element.Poster;
             var ref = apiurl + "&t=" + element.Title;
             ref = ref.replace(' ', '+');
-            // console.log(element.Title);
             anc.href = "./html/result.html";
             i = i + 1;
             image.setAttribute('id', i);
@@ -71,11 +69,11 @@ form.addEventListener("submit", (e) => {
 });
 
 
-var the = document.querySelector('main');
-the.addEventListener("click", doSomething, false);
+const the = document.querySelector('main');
+the.addEventListener("click", movieSelect, false);
 
 
-function doSomething(e) {
+function movieSelect(e) {
     if (e.target != e.currentTarget) {
         var clicked = e.target.id;
         localStorage.setItem("Title", data.Search[clicked - 1].Title);

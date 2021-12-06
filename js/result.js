@@ -28,19 +28,19 @@ async function getdata(url) {
     
 
 
-    const a = document.getElementById('a');
+    const a = document.getElementById('Genre');
     a.innerHTML='<b>Genre</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Genre;
-    const b = document.getElementById('b');
+    const b = document.getElementById('Released');
     b.innerHTML='<b>Released </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Released;
-    const c = document.getElementById('c');
+    const c = document.getElementById('Rated');
     c.innerHTML='<b>Rated</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Rated;
-    const d = document.getElementById('d');
+    const d = document.getElementById('imdbRating');
     d.innerHTML='<b>imdbRating</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.imdbRating;
-    const e = document.getElementById('e');
+    const e = document.getElementById('Director');
     e.innerHTML='<b>Director</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Director;
-    const f = document.getElementById('f');
+    const f = document.getElementById('Writer');
     f.innerHTML='<b>Writer</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Writer;
-    const g = document.getElementById('g');
+    const g = document.getElementById('Actors');
     g.innerHTML='<b>Actors</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ' + data.Actors;
 
     const plot = document.getElementById('plot');
